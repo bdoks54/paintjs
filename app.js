@@ -34,11 +34,9 @@ function onMouseDown(event){
 
 
 
-
-
 if(canvas){
     canvas.addEventListener("mousemove", onMouseMove);
-    canvas.addEventListenerk("mousedown", startPainting);
+    canvas.addEventListener("mousedown", startPainting);
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mouseleave", stopPainting);
 }
